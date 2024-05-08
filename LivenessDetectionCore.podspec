@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name = "LivenessDetection"
+  spec.name = "LivenessDetectionCore"
   spec.version = "1.0.0"
   spec.summary = "Liveness detection for iOS"
 
