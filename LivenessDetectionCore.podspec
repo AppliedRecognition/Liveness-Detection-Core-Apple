@@ -13,10 +13,11 @@ spoof detectors."
   spec.author = "Jakub Dolejs"
   
   spec.platform = :ios, "13.0"
-  spec.swift_version = "5.0"
+  spec.swift_versions = ["5.5", "5.6", "5.7", "5.8", "5.9", "5.10"]
   
   spec.source = { :git => "https://github.com/AppliedRecognition/Liveness-Detection-Core-Apple.git", :tag => "#{spec.version}" }
 
   spec.source_files = "Sources/LivenessDetection/*.swift"
+  spec.module_name = "LivenessDetection"
 
 end
