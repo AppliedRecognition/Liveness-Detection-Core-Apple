@@ -10,6 +10,7 @@ import UIKit
 
 /// Spoof detector protocol
 /// - Since: 1.0.0
+@available(iOS 13, *)
 public protocol SpoofDetector {
     
     /// Spoof detector identifier
