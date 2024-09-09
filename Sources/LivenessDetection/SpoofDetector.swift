@@ -32,6 +32,7 @@ public protocol SpoofDetector {
     func detectSpoofInImage(_ image: UIImage, regionOfInterest roi: CGRect?) async throws -> Float
 }
 
+@available(iOS 13, *)
 public extension SpoofDetector {
     
     /// Check whether image is a spoof
