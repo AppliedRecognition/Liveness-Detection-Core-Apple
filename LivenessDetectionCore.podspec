@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "LivenessDetectionCore"
-  spec.version = "1.0.0"
+  spec.version = "1.1.0"
   spec.summary = "Liveness detection for iOS"
 
   spec.description = "This library contains the SpoofDetector protocol, which is adopted by all Ver-ID spoof detector classes. This allows you to add liveness (spoof) detection to your project without being explicit about the specific 
