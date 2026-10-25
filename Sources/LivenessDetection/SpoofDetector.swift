@@ -38,7 +38,7 @@ public protocol SpoofDetector {
     ///   - roi: Region of interest – this is typically a face bounding box
     /// - Returns: Confidence score between `0.0` and `1.0`
     /// - Since: 1.1.0
-    @available(iOS, introduced: 13.0, obsoleted: 15.0)
+    @available(iOS, introduced: 13.0, deprecated: 15.0)
     func detectSpoofInImage(_ image: UIImage, regionOfInterest roi: CGRect?) throws -> Float
 }
 
@@ -63,7 +63,7 @@ public extension SpoofDetector {
     ///   - roi: Region of interest – this is typically a face bounding box
     /// - Returns: `true` if the image is a spoof, `false` otherwise
     /// - Since: 1.1.0
-    @available(iOS, introduced: 13.0, obsoleted: 15.0)
+    @available(iOS, introduced: 13.0, deprecated: 15.0)
     func isSpoofImage(_ image: UIImage, regionOfInterest roi: CGRect?) throws -> Bool {
         let score = try self.detectSpoofInImage(image, regionOfInterest: roi)
         return score >= self.confidenceThreshold
